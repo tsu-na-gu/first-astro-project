@@ -1,10 +1,84 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import { Image} from 'astro:assets';
+import astroLogo from '../assets/astro-logo-dark.png';
+import tailwindLogo from '../assets/tailwindcss-logotype.png';
+import myselfLogo from '../assets/webSiteCreatorCredit.png';
+import heroImage from '../assets/heroImage.jpg';	
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
-
 <Layout>
-	<h1>My Astro Website!</h1>
+	<section class="py-20">
+		<div class="lg:border-y">
+			<div class="block lg:grid lg:grid-cols-3">
+				<div class="mx-8  px-2 md:px-4 lg:px-8 lg:border-r lg:border-l lg:divide-y">
+					<div class="flex justify-center lg:py-8 items-center flex-col">
+						<div class="mt-2 md:mt-4">
+							<h1 class="mx-auto font-bold text-[2.5rem] leading-[1.2] tracking-[-1px] md:text-[4rem] md:leading-[1.15] md:tracking-[-2px] lg:text-7xl">
+								Welcome to my first Astro used site.
+							</h1>
+						</div>
+						<div class="mt-6 pt-6 border-t">
+							<p class="tracking-[-0.1px] text-muted-foreground">
+								I fast try to make a site with Astro. Within 30minutes, I could deploy to Server. It's quick and easy.
+								Also Astro is very fast at server response, but also support cliant side script. It's a great choice for almost static site.
+							</p>
+						</div>
+					</div>
+					<div class="flex flex-col mb-4 lg:mb-8 justify-center items-center lg:col-span-1">
+						<div class="flex-1 overflow-hidden w-[300px] h-[100px]">
+							<Image src={astroLogo} alt="Astro logo"  width="300" height="100" class="object-center"/>
+						</div>
+						<div class="hidden lg:flex lg:flex-col lg:justify-center lg:items-center">
+							<div class="flex-1 overflow-hidden w-[300px] h-[100px]">
+								<Image src={tailwindLogo} alt="Tailwindcss logo"  width="300" height="100" class="object-center"/>
+							</div>
+							<div class="flex-1 overflow-hidden w-[200px] h-[210px]">
+								<Image src={myselfLogo} alt="Credit logo"  width="200" height="210" class="object-center"/>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+			<div class="lg:col-span-2">
+				<div class="mr-8 px-2 md:px-4">
+					<div class="flex flex-col justify-center items-center gap-8 pr-8 lg:border-r">
+						<div class="lg:mt-8 hidden lg:block overflow-hidden h-[400px] w-auto">
+							<Image src={heroImage} alt="Hero image"  width="1200" height="400" class="object-left-bottom"/>
+						</div>
+						<div class="border-b pb-2 lg:pb-8">
+								<h2 class="text-2xl font-bold mt-8">What's so special about Astro?</h2>
+								<p class="pt-2 lg:pt-6 text-muted-foreground">
+								Astro is the fastest server-side rendering framework with javascript component support, like React, vue, svelte. And it's supported on
+								both javascript and HTML separately include the same file. I was using React before, Astro support to write a page in jsx and could use React component. Astro is a very good choice for I could make as well as design but also I have coding skill. Yes web trend is fast every site need next.js which have lots of rendering options. With Astro, you could make a almost static site to eccomerce site and other lots of site could build. I also to use tailwindcss in this site. My name is Hiroaki Sato. My experience in programming learning is almost 6 years. But my also learning Design in college, so I could make a design as well. Programming consume lots of time to make a pro level. 
+								Now I hope to become a UI design. Design is fast to make a result, but I could coding to make a mockup moving site as well. It's my
+								sell point to make a UI designer. And this kind of UI main site is very suitable to make with Astro, so I try Astro now. 
+							</p>
+						</div>
+						<div class="border-b pb-2 lg:pb-8">
+							<h2 class="text-2xl font-bold mt-8">About me</h2>
+							<p class="pt-2 lg:pt-6 text-muted-foreground">
+								Now I leran the skill of foundamental graphic design. I'm just making a logo and typography with illustrator and composition of photo with photoshop, and web site design like a Hero section in the site. But my change of hope to make money by programmer to ui designer cost me lots of money. I didn't have so lots of saving. So I try to get job as a midnight part-time worker in 3 or 4 days in a week. And I constantlly make design image to upload on my portfolio site. I would try to get a simple design job to start the career to remain days. 
+								This site would link to my portfolio site. I would like to make more simple site to make. So This site is the start of my UI coding skill
+								also better than anyone in the freelance competitive job market. 
+							</p>
+						</div>
+						<div class="pb-2 lg:pb-8">
+							<h2 class="text-2xl font-bold mt-8">About this site</h2>
+							<p class="pt-2 lg:pt-6 text-muted-foreground">
+								I didn't design this site with Figma mockup. Becuase I made this site for learning tutorial not for practically show my skill. 
+								Tutorial instract me to make a markdown post and make a blog, but site like blog need lots of content. So I made start page only
+								for this site. I just try to make a hero section design lots of times with Figma. So I would make second coding project is going
+								to simple Hero section or start page I myself designed with it, would like to make. Also I just make this site with tailwindcss.
+								Tailwindcss is responsive design support css library. I have this thing in mind and using it's responsive prefix include in class
+								name. It may view well in mobile phone or tablet.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
 </Layout>
