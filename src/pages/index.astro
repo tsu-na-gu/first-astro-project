@@ -1,7 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image} from 'astro:assets';
+import astroLogo from '@/assets/astro-logo-dark.png';
+import tailwindLogo from '@/assets/tailwindcss-logotype.png';
+import myselfLogo from '@/assets/webSiteCreatorCredit.png';
+import heroImage from '@/assets/heroImage.jpg';	
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
-
 <Layout>
 	<section class="py-20">
 		<div class="lg:border-y">
@@ -22,14 +28,14 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 					<div class="flex flex-col mb-4 lg:mb-8 justify-center items-center lg:col-span-1">
 						<div class="flex-1 overflow-hidden w-[300px] h-[100px]">
-							<img src="astro-logo-dark.png" alt="Astro logo" class="object-center"/>
+							<Image src={astroLogo} alt="Astro logo"  width="300" height="100" class="object-center"/>
 						</div>
 						<div class="hidden lg:flex lg:flex-col lg:justify-center lg:items-center">
 							<div class="flex-1 overflow-hidden w-[300px] h-[100px]">
-								<img src="tailwindcss-logotype.png" alt="Tailwindcss logo" class="object-center"/>
+								<Image src={tailwindLogo} alt="Tailwindcss logo"  width="300" height="100" class="object-center"/>
 							</div>
 							<div class="flex-1 overflow-hidden w-[200px] h-[210px]">
-								<img src="credit.png" alt="Credit logo" class="object-center"/>
+								<Image src={myselfLogo} alt="Credit logo"  width="200" height="210" class="object-center"/>
 							</div>
 						</div>
 					</div>
@@ -39,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="mr-8 px-2 md:px-4">
 					<div class="flex flex-col justify-center items-center gap-8 pr-8 lg:border-r">
 						<div class="lg:mt-8 hidden lg:block overflow-hidden h-[400px] w-auto">
-							<img src="heroImage.jpg" alt="Hero image" class="object-left-bottom"/>
+							<Image src={heroImage} alt="Hero image"  width="1200" height="400" class="object-left-bottom"/>
 						</div>
 						<div class="border-b pb-2 lg:pb-8">
 								<h2 class="text-2xl font-bold mt-8">What's so special about Astro?</h2>
